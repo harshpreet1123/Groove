@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.5)),
+    url(images/paino.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ff0f39;
+  display: block;
+  margin: auto;
+  transition: 0.2s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 60px;
+}
+
+.text-box p {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.text-box button {
+  font-size: 25px;
+  margin: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid whitesmoke;
+}
+
+.text-box button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.text-box button:hover {
+  background: #ff0f39;
+  border: #ff0f39;
+  transition: 0.1s;
+}
+
+nav .btun {
+  display: none;
+}
+
+/* -------------------Programs------------------- */
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 23%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  background: #fdd3d3;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.781);
+  transition: 0.12s;
+}
+
+/* -------------------Campus------------------- */
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.campus-col {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.25px;
+}
+
+.layer:hover {
+  background: #f882828f;
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 24px;
+  color: whitesmoke;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* -------------------Faciliteis------------------- */
+
+.facility {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.facility-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facility-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facility-col p {
+  padding: 0;
+}
+
+.facility-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* -------------------Footer------------------- */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.social .icons {
+  margin: 0 13px;
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+/* -------------------About us page------------------- */
+
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.5)),
+    url(images/sheet.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.sub-header h1 {
+  margin-top: 60px;
+}
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img{
+  width: 100%;
+}
+
+.about-col h2{
+  padding-top: 0;
+  font-weight: 600;
+}
+
+.about-col p{
+  padding: 15px 0 25px;
+}
+
+.info h2{
+  color: #ff0f39;
+  padding: 15px 0 15px;
+}
+.info p{
+  padding: 15px 0 15px;
+}
+
+.info hr{
+  color: #ff0f39;
+}
+
+.mission h1{
+  text-align: center;
+  color: #ff0f39;
+  padding: 20px 0 20px;
+}
+
+.mission p{
+  padding: 15px 0 25px;
+}
+.about-img {
+  height: 50vh;
+  width: 100%;
+  background-image: url(images/trumpt.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.apply{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/building-2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 100px 0;
+  color: whitesmoke;
+  text-align: center;
+}
+.apply button{
+  font-size: 25px;
+  margin: 20px;
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid whitesmoke;
+}
+
+.apply button a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.apply button:hover{
+  background: #ff0f39;
+  border: 1px solid #ff0f39;
+}
+
+/* -------------------Alumani------------------- */
+
+.alum-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.5)),
+    url(images/sheet.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.alum-header h1 {
+  margin-top: 60px;
+}
+.alumani {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.alumani-col {
+  flex-basis: 22%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.alumani-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.alumani-col p {
+  padding: 0;
+}
+
+.alumani-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.vall{
+  text-align: center;
+  margin: 5%;
+}
+.vall a{
+  text-decoration: none;
+  color: #ff0f39;
+}
+
+.vall a:hover{
+  text-decoration: underline;
+}
+
+
+/* ------------------Apply----------------- */
+
+.apply-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.5)), url(images/building-2.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.apply-header h1 {
+  margin-top: 60px;
+}
+
+/* ------------------Contact US----------------- */
+
+.location{
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe{
+  width: 100%;
+}
+
+.contact-us{
+  width: 80%;
+  margin: auto;
+}
+
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-col div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col div p{
+  padding: 0;
+}
+
+.contact-col div h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 400;
+
+}
+
+.contact-col input, .contact-col textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 16px;
+  outline: none;
+  border: 1px solid #ff0f39;
+  box-sizing: border-box;
+}
+
+.contact-col button{
+  font-size: 20px;
+  width: 180px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ff0f39;
+  color: #ff0f39;
+  text-decoration: none;
+}
+
+.contact-col button:hover{
+  background: #ff0f39;
+  color: whitesmoke;
+  border: 1px solid #ff0f39;
+}
+.events{
+  text-align: center;
+  margin: 40px;
+}
+.event-info {
+  height: 30vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border-radius: 20px;
+  padding: 100px 0;
+  color: whitesmoke;
+  margin-top: 30px;
+}
+.event-info h2{
+  margin-top: 40px;
+}
+
+#e1{
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.5)), url(images/event-1.jpg);
+}
+
+#e2{
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.5)), url(images/event-2.jpg);
+}
+
+#e3{
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.5)), url(images/dk.jpg);
+}
+
+.events button{
+  font-size: 20px;
+  width: 180px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.events button:hover{
+  background: #ff0f39;
+  border: 1px solid #ff0f39;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+      integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
+      crossorigin="anonymous"
+    /> -->
+    <title>Groove</title>
+  </head>
+  <body>
+    <!-- -------------------Hero Section------------------- -->
+    <section class="apply-header">
+      <nav>
+        <a href="index.html" class="title">ＧＲＯＯＶＥ</a>
+
+        <div class="nav-links" id="navLinks">
+          <!-- <i class="fa fa-xmark"></i> -->
+          <img class="btun" src="images/cross.png" onclick="hideMenu()" />
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="course.html">COURSES</a></li>
+            <li><a href="alumni.html">ALUMNI</a></li>
+            <li><a href="apply.html">APPLY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <img class="btun" src="images/menu.png" onclick="showMenu()" />
+        <!-- <i class="fa fa-bars"></i> -->
+      </nav>
+      <h1>Apply Now</h1>
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+     <!-- -------------------Footer------------------- -->
+
+     <section class="footer">
+        <h4>About Us</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, totam
+          dignissimos.
+        </p>
+        <div class="social">
+        <img class="icons" src="images/facebook.png">
+        <img class="icons" src="images/instagram.png">
+        <img class="icons" src="images/twitter.png">
+        </div>
+      </section>
+      <script>
+        var navLinks = document.getElementById("navLinks");
+  
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+  
+        function hideMenu() {
+          navLinks.style.right = "-200px";
+        }
+      </script>
+    </body>
+  </html>
