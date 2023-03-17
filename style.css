@@ -475,6 +475,7 @@ h3 {
   outline: none;
   border: 1px solid #ff0f39;
   box-sizing: border-box;
+  resize:none;
 }
 
 .contact-col button{
